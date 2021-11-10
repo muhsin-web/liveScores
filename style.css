@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Mono&display=swap');
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      outline: 0;
+}
+html{
+      scroll-behavior: smooth;
+}
+body{
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+      background-image: url(/skysports-premier-league-sky-sports_5547250.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      background-attachment: fixed;
+      overflow: hidden;
+}
+::-webkit-scrollbar{
+      width: 3px;
+}
+::-webkit-scrollbar-thumb{
+      background-color: rgb(5, 92, 184);
+}
+
+/* ####################### SIDE_NAVBAR ## START ############## */
+.side_navbar{
+      text-align: left !important;
+      width: 25%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.681);
+      display: flex;
+      flex-direction: column;
+}
+.logo{
+      margin-left: 2rem;
+      margin-top: 2rem;
+      font-size: 14px;
+      color: #fafafa;
+}
+.logo span{
+      color: red;
+}
+.nav_list{
+      list-style: none;
+      padding: 0 1rem;
+      margin-top: 2rem;
+}
+.nav_item{
+      margin-bottom: 1.3rem;
+      width: 100%;
+      border-bottom: 1px solid #fff;
+      opacity: .7;
+}
+.nav_link{
+      color: #fff;
+      padding: 20px 0;
+      text-decoration: none;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      opacity: .9;
+}
+.nav_link:hover{
+      opacity: 1;
+}
+.suggest_title{
+      color: #fafafad9;
+      text-align: center;
+      letter-spacing: 1px;
+}
+.suggestion{
+      margin: 1rem 0;
+      padding: 0 1.8rem;
+}
+input, textarea{
+      width: 100%;
+      padding: 10px 0;
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: #fafafad6;
+}
+.client{
+      border-bottom: 1px solid #fafafad7;
+}
+#textarea{
+      border: 1px solid #fafafad7;
+      margin: 20px 0;
+}
+
+.btn{
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: 1px;
+}
+
+.btn_submit{
+      color: red;
+      font-weight: bold;
+}
+
+.btn_submit:hover{
+      background-color: red;
+      color: #fafafa;
+}
+.toggle{
+      display: none;
+}
+
+/* ####################### SIDE_NAVBAR ## END ############## */
+
+
+.container{
+      text-align: center;
+      padding: 8px;
+      width: 60%;
+      background-color: #fafafa;
+      /* background-color: #000f19; */
+      /* opacity: .88; */
+      text-transform: uppercase;
+      border-radius: 8px;
+      height: 99.8%;
+      overflow: hidden;
+      /* color: #fff !important; */
+}
+.header_text{
+      margin-bottom: 10px;
+}
+.header_text sup{
+      color: #fff;
+      font-size: 9px;
+      font-weight: bold;
+      background-color: red;
+      padding: 1px 4px;
+      border-radius: 6px;
+}
+
+.title-box{
+      margin: 25px 0;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.4rem;
+      width: 100%;
+}
+.title-box #goals{
+      font-size: 2.5rem;
+}
+.team{
+      width: 220px;
+}
+.team img{
+      height: 54px;
+      width: 54px;
+}
+.details{
+      font-size: 16px;
+      font-weight: bold;
+      color: #000f19;
+}
+.sub_container{
+      height: 40%;
+      padding: 15px 0;
+      overflow: scroll;
+}
+.card{
+      padding: .3px 0;
+}
+.matches{
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      overflow: scroll;
+      padding: 15px 0;
+}
+.card:nth-child(even){
+      margin-top: 10px;
+      background-color: rgb(225, 225, 225);
+}
+.card{
+      margin-bottom: 10px;
+}
+
+.no-match{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+}
+.no-match p{
+      color: red;
+      margin-top: 3rem;
+      font-weight: 500;
+}
+
+@media screen and (max-width: 986px) {
+      .container{
+            width: 75%;
+      }
+      .side_navbar{
+            width: 25%;
+      }
+}
+
+@media screen and (max-width: 810px) {
+      body{ 
+            flex-direction: column;
+            justify-content: flex-end;
+      }
+      .container{
+            height: 92.3%;
+            width: 100%;
+      }
+      .toggle{
+            display: block;
+            width: 30px;
+            height: 30px;
+      }
+      img{
+            width: 100%;
+      }
+      .side_navbar{
+            position: fixed;
+            width: 100%;
+            height: 65px;
+            top: 0;
+            left: 0;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 2rem;
+      }
+      .logo{
+            margin: unset;
+      }
+      .menu{
+            position: fixed;
+            right: 0;
+            top: 65px;
+            height: 100vh;
+            background-color: red;
+            width: 70%;
+            transform: translateX(100%);
+      }
+}
+

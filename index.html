@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Livescore</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <div class="side_navbar">
+            <div class="logo"><h1>Live<span>FB</span>.</h1></div>
+            <div class="toggle"><img src="/menu.png" alt=""></div>
+            <div class="menu">
+            <ul class="nav_list">
+                  <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">Fixture</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">Table</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">Club Achievements</a></li>
+            </ul>
+            <div class="suggest_title">
+                  <h2>Leave A comment.</h2>
+            </div>
+            <form action="" class="suggestion">
+                  <input type="text" class="client" placeholder="FullName" required>
+                  <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea><br>
+                  <button class="btn btn_submit" type="submit">Submit</button>
+            </form>
+      </div>
+      </div>
+      <div class="container">
+<div class="sub_container">
+      <h1 class = "header_text">Hot Matches <sup>live</sup></h1>
+
+<div class="card">
+      <div class="title-box">
+            <p>Local Team</p>
+            <div class="details">
+                  <p class="league">champions league</p>
+                  <p id="elaspsed">1HF : 45'</p>
+            </div>
+            <p>visitor team</p>
+      </div>
+
+      <div class="title-box">
+            <div class="team">
+                  <img src="" alt="" id="hom-logo">
+                  <p id="home-name">Team Name</p>
+            </div>
+            <p id="goals">3 - 1</p>
+            <div class="team">
+                  <img src="" alt="" id="away-logo">
+                  <p id="away-name">Team Name</p>
+            </div>
+      </div> 
+</div>
+
+</div>
+            <hr style="color: red; margin-top: 30px;">
+            <div class="matches" id="match-table">
+                  <h1 class = "header_text">ScoreBoard <sup>live</sup></h1>
+                  <div class="matches-table"></div>
+            </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>

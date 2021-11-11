@@ -224,6 +224,23 @@ input, textarea{
             height: 92.3%;
             width: 100%;
       }
+      .title-box #goals{
+            font-size: 1.5rem;
+      }
+      .team img{
+            height: 38px;
+            width: 38px;
+      }
+      .details{
+            font-size: 14px;
+      }
+
+      .title-box{
+            font-size: 1.1rem;
+      }
+      .team{
+            width: 120px;
+      }
       .toggle{
             display: block;
             width: 30px;
